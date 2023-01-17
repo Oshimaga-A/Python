@@ -1,0 +1,95 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[26]:
+
+
+from random import randint
+
+
+# In[27]:
+
+
+print("Welcome to rock paper and scissors game")
+cscore=0
+pscore=0
+
+
+# In[28]:
+
+
+print("Enter ur choice")
+
+
+# In[30]:
+
+
+player = input("")
+
+
+# In[31]:
+
+
+random_number=randint(1,3)
+
+
+# In[32]:
+
+
+if random_number==1:
+    computerchoice="Rock"
+elif random_number==2:
+    computerchoice="Paper"
+elif random_number==3:
+    computerchoice="Scissors"
+
+
+# In[33]:
+
+
+print("The computer's choice is",computerchoice)
+if computerchoice == "Paper":
+    if playerchoice=="Scissors":
+        print("Your's choice is ",player)
+        print("Computer's choice is ",computerchoice)
+        print("Player scores 1 point")
+        pscore=pscore+1
+        print(pscore)
+    else:
+        print("Your's choice is ",player)
+        print("Computer's choice is ",computerchoice)
+        print("Computer's scores 1 point")
+        cscore=cscore+1
+        print(cscore)
+elif computerchoice == "Rock":
+    if playerchoice=="Paper":
+        print("Your's choice is ",player)
+        print("Computer's choice is ",computerchoice)
+        print("Player scores 1 point")
+        pscore=pscore+1
+        print(pscore)
+    else:
+        print("Your's choice is ",player)
+        print("Computer's choice is ",computerchoice)
+        print("Computer's scores 1 point")
+        cscore=cscore+1
+        print(cscore)
+elif computerchoice == "Scissors":
+    if playerchoice=="Rock":
+        print("Your's choice is ",player)
+        print("Computer's choice is ",computerchoice)
+        print("Player scores 1 point")
+        pscore=pscore+1
+        print(pscore)
+    else:
+        print("Your's choice is ",player)
+        print("Computer's choice is ",computerchoice)
+        print("Computer's scores 1 point")
+        cscore=cscore+1
+        print(cscore)
+elif player==computerchoice:
+    print("It's a tie")
+    
+else:
+    print("Enter a valid input!")
+
