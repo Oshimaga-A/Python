@@ -1,0 +1,249 @@
+1)Which module in Python supports regular expressions?
+A. re
+B. regex
+C. pyregex
+D. none of the mentioned
+
+Ans A
+
+2)What will be the output of the following Python code?
+re.compile('hello', re.X)
+A. Error
+B. Junk value
+C. [‘h’, ‘e’, ‘l’, ‘l’, ‘o’]
+D. re.compile(‘hello’, re.VERBOSE)
+
+Ans D
+
+3)Which of the following creates a pattern object?
+A. re.regex(str)
+B. re.assemble(str)
+C. re.create(str)
+D. re.compile(str)
+
+Ans D
+
+4)The expression a{5} will match _____________ characters with the previous regular expression.
+A. 5 or less
+B. exactly 5
+C. 5 or more
+D. exactly 4
+
+Ans B
+
+5)What will be the output of the following Python code?
+re.split('[a-c]', '0a3B6', re.I)
+A. Error
+B. [‘a’]
+C. [‘a’, ‘B’]
+D. [‘0’, ‘3B6’]
+
+Ans D
+
+6)The function re.error raises an exception if a particular string contains no match for the given pattern.
+A. True
+B. False
+
+Ans B
+
+7)The difference between the functions re.sub and re.subn is that re.sub returns a _______________ whereas re.subn returns a __________________
+A. tuple, list
+B. string, list
+C. list, tuple
+D. string, tuple
+
+Ans D
+
+8)What does the function re.match do?
+A. such a function does not exist
+B. matches a pattern at the start of the string
+C. matches a pattern at any position in the string
+D. none of the mentioned
+
+Ans B
+
+9)What does the function re.search do?
+A. such a function does not exist
+B. matches a pattern at the start of the string
+C. matches a pattern at any position in the string
+D. none of the mentioned
+Ans C
+
+10)What will the following code print?
+
+import re
+hand = open('mbox-short.txt')
+for line in hand:
+    line = line.rstrip()
+    if re.search('^From:', line):
+        print(line)
+A. Any line containing 'From'
+B. Any line that starts with 'From'
+C. Any line that starts with 'From:'
+D. Any line containing 'From
+
+Ans C
+
+11)Which of the following options is the correct way to import the regex library?
+
+A. import regex
+B. import re
+C. import Regex
+D. import Re
+
+Ans B
+
+12)Which of these option(s) will match digits in a string? Select all that apply.
+
+A. [0-9]
+B. \D
+C. \d
+D. \w
+
+Ans A and C
+
+13.Which of these lines will be matched when the following code is run?
+
+import re
+hand = open('mbox-short.txt')
+for line in hand:
+    line = line.rstrip()
+    if re.search('\$.+', line):
+        print(line)
+
+14)Which of these lines will be matched when the following code is run?
+
+import re
+hand = open('mbox-short.txt')
+for line in hand:
+    line = line.rstrip()
+    if re.search('\$.+', line):
+        print(line)
+A. It will cost you $1.00
+B. From: stephen.marquard@uct.ac.za $a
+C. $2.50 is your change
+D. You owe three dollars.
+
+Ans A,B,C
+
+15)If you are having trouble remembering what methods the regex library contains, which command can you use to find said methods?
+
+A. help()
+B. dir(regex)
+C. dir(re)
+D. import re
+
+Ans C
+
+16)Which of these command lines will match lines in mbox-short.txt starting with ‘UMich’?
+
+A. # grep '^Umich' mbox-short.txt
+B. $ grep '^UMich' mbox-short.txt
+C. $ grep 'UMich' mbox-short.txt
+D. # grep 'UMich' mbox-short.txt
+
+Ans B
+
+17)Which function returns a list containing all matches?
+
+A. findall
+B. search
+C. split
+D. find
+
+Ans A
+
+18)Which character stand for Starts with in regex?
+
+A. &
+B. ^
+C. $
+D. #
+
+Ans B
+
+19)Which character stand for Zero or more occurrences in regex?
+
+A. *
+B. #
+C. @
+D. |
+
+Ans A
+
+20)In Regex, [a-n] stands for?
+
+A. Returns a match for any digit between 0 and 9
+B. Returns a match for any lower case character, alphabetically between a and n
+C. Returns a match for any two-digit numbers from 00 and 59
+D. Returns a match for any character EXCEPT a, r, and n
+
+Ans B
+
+21)What is the output of the following?
+
+sentence = 'we are humans'
+matched = re.match(r'(.*) (.*?) (.*)', sentence)
+print(matched.group())
+
+A)(‘we’, ‘are’, ‘humans’)	
+B)(we, are, humans)	
+C)(‘we’, ‘humans’)	
+D)‘we are humans’
+
+Ans D
+
+22)Fill in the Blank
+
+re.match(_________, string, flags)
+
+Ans:
+re.match(pattern, string, flags)
+
+23)Guess the output
+
+import re
+xx = "guru99,education is fun"
+r1 = re.findall(r"^\w+",xx)
+print(r1)
+
+A)guru 
+B)guru99
+C)education is fun
+D)99
+
+Ans A
+
+24)Guess the Output
+
+import re
+xx = "guru99,education is fun"
+r1 = re.findall(r"^\w",xx)
+print(r1)
+
+
+A)guru 
+B)guru99
+C)n
+D)g
+
+
+25)Debug the code
+
+import re
+
+phone = "2004-959-559 # This is Phone Number"
+
+# Delete Python-style comments
+num = re.sub(r'-.*$', "", phone)
+print("Phone Num : ", num)
+
+Expected Output:
+2004-959-559
+
+A) re.sub(r'-.*$', "", phone)
+B) re.sub(r'&.*$', "", phone)
+C) re.sub(r'#.*$', "", phone)
+D) None of the above
+
+Ans C

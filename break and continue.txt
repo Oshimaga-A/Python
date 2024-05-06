@@ -1,0 +1,348 @@
+
+BREAK CONTINUE AND PASS
+
+1)In Python, the break and continue statements, together are called ___ statement.
+
+Jump
+goto
+compound
+None of the mentioned above
+
+Answer: B) goto
+
+2)Predict the output
+i=1
+while(i<=10):
+    if(i>5):
+        break
+    i=i+1
+print(i)
+A.6
+B.4
+C.5
+D.1
+
+Ans C
+
+3.Find the error
+
+n=list(range(1,11))
+for i in n:
+    if(i%2==0):
+        continue
+    print(i)
+A)range(1,11)
+B)list(range(1,11))
+C)No error
+D)None of the Above
+
+Ans C
+
+4.Predict the output
+for i in range(1,11):
+    if(i%1==0):
+        continue
+    print(i)
+A)prints 1 to 11
+B)Nothing will be printed
+C)error
+D)None of the Above
+
+5. Predict the Output
+i=1
+while(i<=10):
+    if(i%2==0):
+        continue
+    print(i)
+    i=i+1
+A) Error
+B) Loop will run infinitely
+C)It prints the Odd numbers between 1 to 10
+D) It will print 1 then runs into infinite condition.
+
+Ans D
+
+6.Fill the blank to print the even numbers between 1 to 10
+i=1
+while(i<=10):
+    if(_______):
+        i=i+1
+        continue
+    print(i)
+    i=i+1 
+A)i/2==0
+B)i%2==0
+C)i%2==1
+D)i/2==1
+
+Ans C
+
+7.Predict the Output
+for letter in "Jessica":
+    if letter == "l":
+        continue
+    print(letter)
+A)Jessical
+B)No output
+C)Error
+D)Jessica
+
+Ans D
+
+8. Identify the Error
+for letter in Jenith:
+    if letter == "l":
+        continue
+    print(letter)
+A) Name Error
+B) Value Error
+C) No Error
+D) None of the Above
+
+Ans A
+
+9.Predict the output
+num = 10
+while num < 100:
+    num = num + 10
+    if num == 50:
+        continue
+    print("Current num: ", num)
+A)It prints 50
+B)It prints 10,20,30....to 100, skipping 50
+C)It prints 10,20,30....to 90, skipping 50
+D)None of the Above
+Ans B
+
+10.Place a break statement in the for loop so that it prints from 0 to 7 only
+
+for i in range(100):
+    print(i)
+    _____________
+    ___________
+
+Ans:
+
+for i in range(100):
+    print(i)
+    if i==7:
+        break
+
+11.Add an if statement and a continue statement to the loop so that it skips when iterator equals "sun".
+
+for i in weather:
+    ------
+    ------
+    print(i)
+
+Ans 
+
+for i in weather:
+    if i == "sun":
+        continue
+    print(i)
+
+12.Predict the output
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) # Declaring the tuple
+num_sum = 0
+count = 0
+for x in numbers:
+    num_sum = num_sum + x
+    count = count + 1 
+    if count == 5:
+        break
+print("Sum of first ",count,"integers is: ", num_sum)
+A)10
+B)15
+C)16
+D)17
+
+Ans B
+
+13.Predict the output
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) # Declaring the tuple
+num_sum = 0
+count = 0
+for x in numbers:
+    num_sum = num_sum + x
+    count = count + 1 
+    if count == 5:
+        continue
+print("Sum of first ",count,"integers is: ", num_sum)
+A)55
+B)47
+C)45
+D) Error
+
+Ans C
+
+14.Identitfy the Output
+numbers = (1, 2, 3, 4) 
+num_sum = 0
+count = 0
+for x in numbers:
+    num_sum = num_sum + x
+    count = count + 1 
+    if count != 5:
+        continue
+print("Sum of first ",count,"integers is: ", num_sum)
+
+A)10
+B)0
+C)Error
+D)11
+
+Ans A
+
+15)Whats the output
+
+numbers = (1, 2, 3, 4) # Declaring the tuple
+num_sum = 0
+count = 0
+for x in numbers:
+    
+    if count != 5:
+        continue
+        num_sum = num_sum + x
+        count = count + 1
+       
+print("Sum of first ",count,"integers is: ", num_sum)
+
+A)10
+B)0
+C)No output
+D)Error
+
+16)Find the error
+for x in range(4):
+    if (x == 3 or x==6):
+        continue
+    print(x)
+A)range(4), Out of range
+B)No error
+C)if Conditional is wrong
+D) None of the Above
+
+Ans B
+
+17)Whats the output
+for x in range(4):
+    if (x == 1 or x==2):
+        break
+    print(x)
+A)range(4), Out of range
+B)error
+C)0
+D) None of the Above
+
+Ans C
+
+18)Predict the output
+
+months = ['January', 'June', 'March', 'April']
+for mon in months:
+    pass
+print(months)
+
+A)It prints the list
+B)It Prints none
+C)Error
+D)None of the Above
+Ans A
+
+19)Guess the output
+months = ['January', 'June', 'March', 'April']
+for mon in months:
+	if mon=="June":
+    		pass
+    
+print(months)
+
+A)It prints the list
+B)It Prints none
+C)It Prints all except June
+D)None of the Above
+
+Ans A
+
+20)Guess the output
+
+months = ['January', 'June', 'March', 'April']
+for mon in months:
+  if mon=="June":
+    pass
+    print(mon)
+
+A)It prints the list
+B)It Prints none
+C)It Prints only June
+D)None of the Above
+
+Ans C
+
+21)Guess the Output
+n = 10
+
+# use pass inside if statement
+if n > 10:
+    pass
+    print('Hello')
+A) Error
+B) Hello
+C)Prints None
+D) No output
+
+Ans D
+
+22) Guess the Output
+n = 12
+
+# use pass inside if statement
+if n > 10:
+    pass
+    print('Hello')
+
+A) Error
+B) Hello
+C)Prints None
+D) No output
+
+Ans A
+
+23)Fill the Code
+
+for i in range(5):
+    if _______:
+        continue
+    print(i)
+
+O/P
+0
+1
+2
+4
+
+Ans: i==3
+
+24)Null Statement
+
+A)Break
+B)Continue
+C)Pass
+D)None of the Above
+
+Ans A
+
+25)_______________ to Terminate, ________________________ to Skip the Current iteration
+
+A)Break and Pass
+B)Break and Continue
+C)Break and Null
+D)All of the above.
+
+
+
+
+
+
+

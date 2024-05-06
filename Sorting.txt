@@ -1,0 +1,254 @@
+1) __________sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements in case they are unordered in n-1 passes.
+A)Bubble
+B)Insertion
+C)Complexity
+D)Selection
+
+Ans A
+
+2)The given array is arr = {1,2,4,3}. Bubble sort is used to sort the array elements. How many iterations will be done to sort the array?
+(a)	4
+(b)	2
+(c)	1
+(d)	0
+
+Ans A
+
+3)Merge sort uses
+(a)	Divide-and-conquer
+(b)	Backtracking
+(c)	Heuristic approach
+(d)	Greedy method
+
+Ans A
+
+4)Which of the following is not a stable sorting algorithm?
+
+a) Insertion sort
+b) Selection sort
+c) Bubble sort
+d) Merge sort
+
+Ans B
+
+5)What is the best time complexity of bubble sort?
+
+A)N^2
+B)NlogN
+C)N
+D)N(logN)^2
+
+Ans B
+
+6)The number of swappings needed to sort the numbers 8, 22, 7, 9, 31, 5, 13 in ascending order, using bubble sort is
+
+A)11
+B)12
+C)10
+D)13
+
+Ans C
+
+7)Fill in the blanks
+bubbleSort(array)
+  for i <- 1 to indexOfLastUnsortedElement-1
+    if _______________________________
+      swap leftElement and rightElement
+end bubbleSort
+
+A) leftElement > rightElement
+B)leftElement < rightElement
+C)leftElement = rightElement
+
+Ans A
+8)Consider the following array: Arr=14, 33, 27, 35, 10. Guess the output after first pass
+
+A)33,14,27,35,10
+B)No Swap
+C)None
+
+Ans B
+
+9)Bubble sort is a _________ algorithm.
+A)Complex
+B)Stable
+C)Unstable
+D) None of the Above
+
+Ans B
+
+10)Can bubble sort be implemented recursively?
+
+A)True
+B)False
+
+Ans A
+
+11)arr[] = [6, 3, 0, 5] Guess the output of first pass
+
+A)3,6,0,5
+B)3,0,6,5
+C)0,3,5,6
+D)None of the Above
+
+Ans C
+
+12)Assume that we use Bubble Sort to sort n distinct elements in ascending order. When does the best case of Bubble Sort occur?
+
+A)When elements are sorted in ascending order
+B)When elements are sorted in descending order
+C)When elements are not sorted by any order
+D)None of the above
+
+Ans A
+
+13)What is the running time of an insertion sort algorithm if the input is pre-sorted?
+A)O(N2)
+B)O(N log N)
+C)O(N)
+D)O(M log N)
+
+Ans C
+
+14)What will be the number of passes to sort the elements using insertion sort?
+14, 12, 16, 6, 3, 10
+
+A)6
+B)5
+C)7
+D)1
+
+Ans B
+
+15)Which of the following real time examples is based on insertion sort?
+
+A)arranging a pack of playing cards
+B)database scenarios and distributes scenarios
+C)arranging books on a library shelf
+D) None of the above
+
+16)
+Which of the following sorting algorithms provide the best time complexity in the worst-case scenario?
+A) Merge Sort
+B) Quick sort
+C) Bubble Sort
+D) Selection Sort
+
+Ans A
+
+17)Which of the following is a Divide and Conquer algorithm?
+
+A) Heap Sort
+B) Quick sort
+C) Bubble Sort
+D) Merge Sort
+
+Ans D
+
+18)What is the technique called in which it does not require extra memory for carrying out the sorting procedure?
+A) Stable
+B) Unstable
+C) In place
+D) In partion 
+
+
+Ans C
+
+19)Which of the following is a comparison-based sorting algorithm?
+
+A) Heap Sort
+B) Quick sort
+C) Bubble Sort
+D) Merge Sort
+
+Ans D
+
+20)Which of the following sorting algorithms works by repeatedly selecting the minimum element from the unsorted part of the array and putting it at the beginning of the sorted part?
+
+A) Heap Sort
+B) Selection Sort
+C) Bubble Sort
+D) Merge Sort
+
+Ans B
+
+21)Which of the following sorting algorithms is often used as a subroutine in other sorting algorithms?
+
+A) Heap Sort
+B) Selection Sort
+C) Insertion Sort
+D) Merge Sort
+
+Ans B
+
+22)Which of the following sorting algorithms is not a comparison-based algorithm?
+
+A) Heap Sort
+B) Selection Sort
+C) Insertion Sort
+D) Merge Sort
+
+Ans D
+
+23) What is the time complexity of the best sorting algorithms?
+A)O(n^2)
+B)O(n log n)
+C)O(n)
+D)O(m log n)
+
+Ans B
+
+24) Fill in the blanks(Write One line Code)
+
+begin BubbleSort(list)
+
+   for all elements of list
+      if __________________________
+         swap(list[i], list[i+1])
+      end if
+   end for
+   
+   return list
+   
+end BubbleSort
+
+Ans list[i] > list[i+1]
+
+25) Fill in the Blank(Write one line code)
+
+procedure insertionSort( A : array of items )
+   int holePosition
+   int valueToInsert
+	
+   for i = 1 to length(A) inclusive do:
+	
+      /* select value to be inserted */
+      valueToInsert = A[i]
+      holePosition = i
+      
+      /*locate hole position for the element to be inserted */
+		
+      while ________________________________________ do:
+         A[holePosition] = A[holePosition-1]
+         holePosition = holePosition -1
+      end while
+		
+      /* insert the number at hole position */
+      A[holePosition] = valueToInsert
+      
+   end for
+end procedure
+
+Ans
+
+ holePosition > 0 and A[holePosition-1] > valueToInsert
+
+
+
+
+
+
+
+
+
+   
